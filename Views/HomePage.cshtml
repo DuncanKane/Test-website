@@ -1,0 +1,100 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoViewPage<ContentModels.HomePage>
+@using ContentModels = Umbraco.Web.PublishedModels;
+@{
+	Layout = null;
+}
+
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <title>Home</title>
+  <meta name="description" content="website description" />
+  <meta name="keywords" content="website keywords, website keywords" />
+  <meta http-equiv="content-type" content="text/html; charset=windows-1252" />
+  <link rel="stylesheet" type="text/css" href="wwwroot/style/style.css" />
+</head>
+
+<body>
+  <div id="main">
+    <div id="header">
+      <div id="logo">
+        <div id="logo_text">
+          
+          <h1><a href="index.html">Pam Kane<span class="logo_colour">Childcare</span></a></h1>
+          <h2>Childcare is not expensive, it's priceless.</h2>
+        </div>
+      </div>
+      <div id="menubar">
+        <ul id="menu">
+         
+          <li class="selected"><a href="index.html">Home</a></li>
+          <li><a href="examples.html">Examples</a></li>
+          
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+    <div id="content_header"></div>
+    <div id="site_content">
+      <div id="banner"></div>
+	  <div id="sidebar_container">
+        <div class="sidebar">
+          <div class="sidebar_top"></div>
+          <div class="sidebar_item">
+            <!-- sidebar items here -->
+            <h3>Latest News</h3>
+            <h4>New Website Launched</h4>
+            
+            <p>@Model.Value("newsPage")</p>
+          </div>
+          <div class="sidebar_base"></div>
+        </div>
+        <div class="sidebar">
+          <div class="sidebar_top"></div>
+          <div class="sidebar_item">
+            <h3>Useful Links</h3>
+            <ul>
+              <li><a href="https://www.gov.uk/government/organisations/ofsted">Ofsted</a></li>
+              <li><a href="http://nsod.n-somerset.gov.uk/kb5/northsomerset/directory/advice.page?id=hnE-_DGh-14">Childcare Support</a></li>
+             
+            </ul>
+          </div>
+          <div class="sidebar_base"></div>
+        </div>
+        <div class="sidebar">
+          <div class="sidebar_top"></div>
+          <div class="sidebar_item">
+            <h3>Search</h3>
+            <form method="post" action="#" id="search_form">
+              <p>
+                <input class="search" type="text" name="search_field" value="Enter keywords....." />
+                <input name="search" type="image" style="border: 0; margin: 0 0 -9px 5px;" src="style/search.png" alt="Search" title="Search" />
+              </p>
+            </form>
+          </div>
+          <div class="sidebar_base"></div>
+        </div>
+      </div>
+      <div id="content">
+       
+        <h1>Setting</h1>
+        <p>I live in a large, detached house, on the level, very close to the beach.The garden is large and enclosed. There is a very big area which is paved for outdoor play in the summer and winter alike.
+        </p>
+        <p>The ground floor of the house comprizes: toilet, utility area, kitchen, dining room, large front sitting room, back sitting room and conservatory - all of which are registered for use by minded children.</p>
+        
+        <h2>Ethos</h2>
+        <p>A very simple quesntionaire is given to parents to fill in if they wish - there is no obligation to do so.</p>
+        <p>I have a very good relationship with all my parents, some of whom I have worked with for over 10 years.</p>
+        <p>By providing the right environment to encourage learning through play is important to me.</p>
+        <p>I provide good quality childcare and ensure all the children have access to a substantial range of resources, which are updated regularly. Outside play equipment also encourages well being and excitment</p>
+      </div>
+    </div>
+    <div id="content_footer"></div>
+    <div id="footer">
+      <p><a href="index.html">Home</a> | <a href="examples.html">Examples</a> | <a href="page.html">A Page</a> | <a href="another_page.html">Another Page</a> | <a href="contact.html">Contact Us</a></p>
+      
+    </div>
+  </div>
+</body>
+</html>
